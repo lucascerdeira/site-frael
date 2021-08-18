@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+
+:root {
+    --bgcolor : #1C1C1C;
+    --accentcolor: #FFCC00;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.link-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+
+}
+
+.link-tree img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.link-tree h1 {
+    font-size: 2.5rem;
+
+}
+
+.link-tree a {
+
+    background-color: var(--accentcolor);
+    color: var(--bgcolor);
+    width: 60%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px var(--accentcolor);
+    transition: all 0.3s linear;
+}
+
+.link-tree a:hover {
+    background-color: var(--bgcolor);
+    color: var(--accentcolor);
+}
+
+@meda (min-width: 1024px) {
+    .link-tree {
+        width: 40vw;
+    }
+}
